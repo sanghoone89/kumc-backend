@@ -1,0 +1,29 @@
+{
+  "name": "kumc-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "sanghoone",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "joi": "^14.3.1",
+    "koa": "^2.8.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "mongoose": "^5.7.3"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.2",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.15.1",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "nodemon": "^1.19.3"
+  },
+  "scripts": {
+    "start": "cross-env NODE_PATH=src node src",
+    "start:dev": "cross-env NODE_PATH=src nodemon --watch src/ src/index.js"
+  }
+}
